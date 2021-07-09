@@ -2723,6 +2723,9 @@ class ZappaCLI(object):
             return
 
         touch_path = self.stage_config.get('touch_path', '/')
+        print("#################### V I J A Y    LOG #########################")
+        print(endpoint_url + touch_path)
+        print("#################### V I J A Y    LOG END HERE #########################")
         req = requests.get(endpoint_url + touch_path)
 
         # Sometimes on really large packages, it can take 60-90 secs to be
